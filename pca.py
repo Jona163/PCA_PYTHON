@@ -24,3 +24,4 @@ class PCA:
         idxs = np.argsort(eigenvalues)[::-1]
         eigenvalues = eigenvalues[idxs]
         eigenvectors = eigenvectors[idxs]
+       self.components = eigenvectors[:self.n_components]
