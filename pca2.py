@@ -16,3 +16,12 @@ class PCA:
         
         #Vectores Propios, valores Propios
         vectorespropios, valorespropios = np.linalg.eig(cov)
+       
+        #Vectores Propios v=[:, i] columna de vectores, interponiense para faciles calculos
+        vectorespropios = vectorespropios.T
+        
+        # orden de vetores propios
+        idxs = np.argsort(valorespropios)[::-1]
+        valorespropios = valorespropios[idxs]
+        vectorespropios = vectorespropios[idxs]
+        
