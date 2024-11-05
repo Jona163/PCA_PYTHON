@@ -10,3 +10,6 @@ class PCA:
         # mean centering
         self.mean = np.mean(X, axis=0)
         X = X -  self.mean
+
+        # covariance, functions needs samples as columns
+        cov = np.cov(X.T)
