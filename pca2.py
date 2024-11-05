@@ -13,3 +13,6 @@ class PCA:
         
         # covariante, funciones necesarias de samples de columnas
         cov = np.cov(X.T)
+        
+        #Vectores Propios, valores Propios
+        vectorespropios, valorespropios = np.linalg.eig(cov)
