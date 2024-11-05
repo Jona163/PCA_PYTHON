@@ -5,3 +5,6 @@ class PCA:
         self.n_components = n_components
         self.components = None
         self.mean = None
+
+    def fit(self, X):
+        # mean centering
