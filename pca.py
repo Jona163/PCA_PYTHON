@@ -16,3 +16,6 @@ class PCA:
 
         # eigenvectors, eigenvalues
         eigenvectors, eigenvalues = np.linalg.eig(cov)
+
+        # eigenvectors v = [:, i] column vector, transpose this for easier calculations
+        eigenvectors = eigenvectors.T
