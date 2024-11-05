@@ -8,3 +8,5 @@ class PCA:
 
     def fit(self, X):
         # mean centering
+        self.mean = np.mean(X, axis=0)
+        X = X -  self.mean
