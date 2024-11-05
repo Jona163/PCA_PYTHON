@@ -19,3 +19,6 @@ class PCA:
 
         # eigenvectors v = [:, i] column vector, transpose this for easier calculations
         eigenvectors = eigenvectors.T
+
+        # sort eigenvectors
+        idxs = np.argsort(eigenvalues)[::-1]
