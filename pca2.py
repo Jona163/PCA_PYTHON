@@ -10,3 +10,6 @@ class PCA:
         #men centrado
         selft.mean = np.mean(X, axis=0)
         X=X - selft.mean
+        
+        # covariante, funciones necesarias de samples de columnas
+        cov = np.cov(X.T)
