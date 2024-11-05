@@ -13,3 +13,6 @@ class PCA:
 
         # covariance, functions needs samples as columns
         cov = np.cov(X.T)
+
+        # eigenvectors, eigenvalues
+        eigenvectors, eigenvalues = np.linalg.eig(cov)
