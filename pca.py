@@ -25,3 +25,8 @@ class PCA:
         eigenvalues = eigenvalues[idxs]
         eigenvectors = eigenvectors[idxs]
        self.components = eigenvectors[:self.n_components]
+
+    def transform(self, X):
+        # projects data
+        X = X - self.mean
+        return np.dot(X, self.components.T)
