@@ -1,3 +1,5 @@
+#Jonathan Hernandez 
+
 import numpy as np
 
 class PCA:
