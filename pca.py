@@ -1,3 +1,8 @@
+# Autor: Jonathan Hernández
+# Fecha: 13 noviembre 2024
+# Descripción: Código para una simulación de PCA.
+# GitHub: https://github.com/Jona163
+
 import numpy as np
 class PCA:
 
